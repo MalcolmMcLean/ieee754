@@ -3,7 +3,7 @@
 
 
 */
-#ifned binaryio_h
+#ifndef binaryio_h
 #define binaryio_h
 
 int fget16be(FILE *fp);
