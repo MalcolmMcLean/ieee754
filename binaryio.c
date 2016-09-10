@@ -13,7 +13,7 @@
 */
 
 /**
-  Get a 16-bit big-endian signed integer form a stream.
+  Get a 16-bit big-endian signed integer from a stream.
 
   Does not break, regardless of host integer representation.
 
@@ -31,12 +31,12 @@ int fget16be(FILE *fp)
 }
 
 /**
-Get a 32-bit big-endian signed integer form a stream.
+Get a 32-bit big-endian signed integer from a stream.
 
 Does not break, regardless of host integer representation.
 
 @param[in] fp - pointer to a stream opened for reading in binary mode
-@ returns the 16 bit value as an integer
+@ returns the 32 bit value as a long
 */
 long fget32be(FILE *fp)
 {
@@ -50,7 +50,7 @@ long fget32be(FILE *fp)
 }
 
 /**
-Get a 16-bit little-endian signed integer form a stream.
+Get a 16-bit little-endian signed integer from a stream.
 
 Does not break, regardless of host integer representation.
 
@@ -73,7 +73,7 @@ Get a 32-bit little-endian signed integer form a stream.
 Does not break, regardless of host integer representation.
 
 @param[in] fp - pointer to a stream opened for reading in binary mode
-@ returns the 16 bit value as an integer
+@ returns the 32 bit value as a long
 */
 long fget32le(FILE *fp)
 {
