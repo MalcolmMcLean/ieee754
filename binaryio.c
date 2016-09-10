@@ -68,7 +68,7 @@ int fget16le(FILE *fp)
 }
 
 /**
-Get a 32-bit little-endian signed integer form a stream.
+Get a 32-bit little-endian signed integer from a stream.
 
 Does not break, regardless of host integer representation.
 
