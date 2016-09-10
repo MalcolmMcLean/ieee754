@@ -13,3 +13,7 @@ load the nearest possible representation.
 You should use them anytime you need to load or save binary floating point numbers 
 and the code needs to be platform-independent.
 
+A related issue is reading binary integers portably. It is slightly tricker than it first appears and the simple shift and add algorithm will fail if CHAR_BIT is not 8 or representation is not 2's complement. It can also generate a signed arithmetic overflow trap if not careful. Code has been added to address this question. Any C or C++ code that 
+reads integers in binary format and needs to be portable should use these routines.
+
+
